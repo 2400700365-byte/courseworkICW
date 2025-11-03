@@ -1,0 +1,54 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Home page layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.text {
+  flex: 1;
+  padding-right: 20px;
+  align-content: right;
+}
+
+.image img {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+}s
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .image img {
+    width: 100%;
+    margin-top: 20px;
+  }
